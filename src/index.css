@@ -1,7 +1,13 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/**{
   margin: 0;
-  padding: 50px;
- background-color: #CED3A7;
+  padding: 10px;
+  background-color: #CED3A7;
 }
 
 .App{
@@ -14,7 +20,6 @@
   border: 5px solid;
   font-size: 25px;
   color: white;
-  font-family:'Courier New', Courier, monospace;
   font-weight: bold;
 
-}
+}*/
