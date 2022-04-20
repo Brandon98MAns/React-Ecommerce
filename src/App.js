@@ -1,12 +1,50 @@
-/*import logo from './logo.svg';*/
 import './App.css';
 import NavBar from './componentes/NavBar';
+import Cards from './componentes/Cards';
+import Carrusel from './componentes/Carrusel';
+import Footer from './componentes/Footer';
+
 
 function App() {
   return (
     <div className="App">
+      
       <NavBar/>
-      <p className="text-3xl font-bold underline">Desafio numero 2</p>
+      <Carrusel/> 
+         
+  
+      <Cards>  
+        <div class="card-body">
+          <img src="https://silloneseuropa.com.ar/wp-content/uploads/2020/05/oxford1.jpg" alt="sofa"/>
+          <h2 class="card-title">Sofa!</h2>
+          <p>Texto descriptivo de tarjeta.</p>
+            <div class="card-actions justify-center">
+            <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+      </Cards>
+
+      <Cards>  
+        <div class="card-body">
+          <img src="https://silloneseuropa.com.ar/wp-content/uploads/2020/05/oxford1.jpg" alt="sofa"/>
+          <h2 class="card-title">Sofa!</h2>
+          <p>Texto descriptivo de tarjeta.</p>
+            <div class="card-actions justify-center">
+            <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+      </Cards>
+
+      <Cards>  
+        <div class="card-body">
+          <img src="https://silloneseuropa.com.ar/wp-content/uploads/2020/05/oxford1.jpg" alt="sofa"/>
+          <h2 class="card-title">Sofa!</h2>
+          <p>Texto descriptivo de tarjeta.</p>
+            <div class="card-actions justify-center">
+            <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+      </Cards>
       {/*<header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +59,7 @@ function App() {
           Learn React
         </a>
   </header>*/}
+    <Footer/>
     </div>
   );
 }
