@@ -3,6 +3,7 @@ import NavBar from './componentes/NavBar';
 import Cards from './componentes/Cards';
 import Carrusel from './componentes/Carrusel';
 import Footer from './componentes/Footer';
+import ItemsListContainer from './componentes/ItemsListContainer';
 
 
 function App() {
@@ -10,9 +11,11 @@ function App() {
     <div className="App">
       
       <NavBar/>
+      <ItemsListContainer titulo="Estoy aca!" />
+      <ItemsListContainer titulo="Estoy aca!" />
+      <ItemsListContainer titulo="Estoy aca!" />
       <Carrusel/> 
-         
-  
+
       <Cards>  
         <div class="card-body">
           <img src="https://silloneseuropa.com.ar/wp-content/uploads/2020/05/oxford1.jpg" alt="sofa"/>
