@@ -4,6 +4,7 @@ import Cards from './componentes/Cards';
 import Carrusel from './componentes/Carrusel';
 import Footer from './componentes/Footer';
 import ItemsListContainer from './componentes/ItemsListContainer';
+import ItemCount from './componentes/ItemCount';
 
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
     <div className="App">
       
       <NavBar/>
-      <ItemsListContainer titulo="Estoy aca!" />
-      <ItemsListContainer titulo="Estoy aca!" />
-      <ItemsListContainer titulo="Estoy aca!" />
+      <ItemsListContainer titulo="Props!" />
+      <hr></hr>
+      <ItemCount/>
       <Carrusel/> 
 
       <Cards>  
