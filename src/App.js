@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       
       <NavBar/>
-      <ItemsListContainer titulo="Props!" />
+      <ItemsListContainer titulo="Props!"/>
       <hr></hr>
       <ItemCount/>
       <Carrusel/> 
