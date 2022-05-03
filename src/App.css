@@ -58,6 +58,10 @@
   height: 100vh;
 }
 
+.Catalogo {
+  background-color: rgb(141, 185, 181);
+}
+
 .footer{
   margin-top: 20px;
 }
