@@ -22,6 +22,8 @@ function ItemsListContainer(props) {
   return (
     <div>
     <h1>{props.titulo}</h1>
+    <br></br>
+    <hr></hr>
     <ItemList muebles={muebles} />
     </div>
   )

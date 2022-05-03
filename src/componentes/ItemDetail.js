@@ -1,7 +1,4 @@
-import React from 'react'
-import mubles from '../data/muebles'
-
-function Item ({mueble}) {
+function ItemDetail ({mueble}) {
     return (
         <div>
             <h1>{mueble.title}</h1>
@@ -14,6 +11,4 @@ function Item ({mueble}) {
     )
 }
 
-export default Item
-
-
+export default ItemDetail

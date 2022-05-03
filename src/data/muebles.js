@@ -1,6 +1,7 @@
 const muebles = [
 {
     "id": 1,
+    "imgUrl": "https://silloneseuropa.com.ar/wp-content/uploads/2020/06/sam-1.jpg",
     "title": "Mesa",
     "categoría":"Industrial",
     "material": "Hierro y Madera",
