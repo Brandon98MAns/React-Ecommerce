@@ -6,7 +6,7 @@ import Footer from './componentes/Footer';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import ItemCount from './componentes/ItemCount';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import ItemsListContainer from './componentes/ItemDetailContainer';
+import ItemsListContainer from './componentes/ItemsListContainer';
 
 
 function App() {
@@ -15,9 +15,8 @@ function App() {
       <BrowserRouter>
           <NavBar/>
           <Routes>
-            <Route path="/" element={<ItemsListContainer titulo="Mensaje desde React Router" />} />
-            <Route path="/category/:categoryid" element={<ItemsListContainer titulo="Categoria de Productos" />} />
-            <Route path="/mueble/:itemid" element={<ItemDetailContainer id={3} />} />
+            <Route path="/categoría/:categoríaid" element={<ItemsListContainer titulo="Categoria de Productos" />} />
+            <Route path="/mueble/:itemid" element={<ItemDetailContainer />} />
           </Routes>
           <Carrusel/>
           {/*<div className="Catalogo">*/}

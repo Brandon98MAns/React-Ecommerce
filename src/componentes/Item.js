@@ -1,5 +1,6 @@
 import React from 'react'
-import mubles from '../data/muebles'
+import { Link } from 'react-router-dom'
+/*import muebles from '../data/muebles'*/
 
 function Item ({mueble}) {
     return (
@@ -8,6 +9,10 @@ function Item ({mueble}) {
             <img src={mueble.imgUrl}></img>
             <small>{mueble.categoría}</small>
             <p>{mueble.price}</p>
+
+            <Link to={`/mueble/${mueble.id}`}>
+                <button className="btn btn-primary">Ver mas</button>
+            </Link>
             <br></br>
             <hr></hr>
         </div>
