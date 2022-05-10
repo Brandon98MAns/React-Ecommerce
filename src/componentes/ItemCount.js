@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 
-function ItemCount() {
-    const [count, setCount] = useState(0);
+function ItemCount(props) {
+    const [count, setCount] = useState(props.initial);
 
-    function handleSuma(){
-        setCount(count + 1);
+    function handleAdd(){
+        if (count < props.stock) setCount(count + 1);
     }
     function handleResta(){
-        setCount(count - 1);
+        if (count > 1) setCount(count - 1);
     } 
+    function handleClick(){
+        props.onAdd(count);
+    }
 
   return (
     
@@ -17,10 +20,10 @@ function ItemCount() {
         <div>
             <button onClick={handleResta}>-</button>
             <span>  {count}  </span>
-            <button onClick={handleSuma}>+</button>
+            <button onClick={handleAdd}>+</button>
         </div>  
         <div>
-            <button>Agregar al carrito</button>
+            <button onClick={handleClick}>Agregar al carrito</button>
         </div>
     </div>
   )

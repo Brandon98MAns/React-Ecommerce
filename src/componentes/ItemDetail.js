@@ -1,13 +1,37 @@
-function ItemDetail ({mueble}) {
+import ItemCount from "./ItemCount";
+import {useState} from "react";
+
+const ItemDetail = ({mueble}) => {
+    const [isInCart, setIsInCart] = useState(false);
+
+    function onAdd(count){
+        console.log(`Agregaste al carrito ${count} items.`);
+        setIsInCart(true);
+    }
+
     return (
-        <div>
-            <br></br>
-            <h1>{mueble.title}</h1>
-            <img src={mueble.imgUrl}></img>
-            <small>{mueble.categoría}</small>
-            <p>{mueble.price}</p>
-            <br></br>
-            <hr></hr>
+        <div className="xl:w-1/3 md:w-1/2 p-4">
+            <div clasName="shadow-lg bg/gray-100 p-6 rounded-lg">
+                <div>
+                    <img
+                        alt={mueble.title}
+                        className="image object-contain bg-placeholder h-60 rounded w-full"
+                        src={mueble.imgUrl}>
+                    </img>
+                </div>
+                <h3 className="h-20 tracking-widest text-green-600 font-bold title-font">
+                    {mueble.title}
+                </h3>
+                <span className="title-font font-medium text-2x1 text-gray-900">
+                    <h2 className="mb-4">${mueble.price}</h2>
+                </span> 
+                <p className="leading-relaxed text-base">{mueble.categoría}</p>  
+                {isInCart?
+                    <button>Ver carrito</button>
+                :
+                    <ItemCount onAdd={onAdd} stock={mueble.stock} initial={1}/>
+                }       
+            </div>
         </div>
     )
 }

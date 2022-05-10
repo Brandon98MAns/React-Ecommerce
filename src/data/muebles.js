@@ -5,8 +5,9 @@ const muebles = [
     "title": "Mesa",
     "categoría":"Industrial",
     "material": "Hierro y Madera",
-    "descripcion":"Living",
-    "price":"$4.53"
+    "descripcion":"Mesa de hierro y madera para comedor.",
+    "price":"$4.53",
+    "stock": 53,
 },
 {
     "id":2,
@@ -14,7 +15,8 @@ const muebles = [
     "categoría":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
-    "price":"$0.12"
+    "price":"$0.12",
+    "stock": 53,
 },
 {
     "id": 3,
@@ -22,7 +24,8 @@ const muebles = [
     "categoría":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Living",
-    "price":"$4.53"
+    "price":"$4.53",
+    "stock": 53,
 },
 {
     "id":4,
@@ -30,7 +33,8 @@ const muebles = [
     "categoría":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
-    "price":"$0.12"
+    "price":"$0.12",
+    "stock": 53,
 },
 {
     "id": 5,
@@ -38,7 +42,8 @@ const muebles = [
     "categoría":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Living",
-    "price":"$4.53"
+    "price":"$4.53",
+    "stock": 53,
 },
 {
     "id":6,
@@ -46,7 +51,8 @@ const muebles = [
     "categoría":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
-    "price":"$0.12"
+    "price":"$0.12",
+    "stock": 53,
 },
 {
     "id": 7,
@@ -54,7 +60,8 @@ const muebles = [
     "categoría":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Living",
-    "price":"$4.53"
+    "price":"$4.53",
+    "stock": 53,
 },
 {
     "id":8,
@@ -62,7 +69,8 @@ const muebles = [
     "categoría":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
-    "price":"$0.12"
+    "price":"$0.12",
+    "stock": 53,
 },
 {
     "id": 9,
@@ -70,7 +78,8 @@ const muebles = [
     "categoría":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Living",
-    "price":"$4.53"
+    "price":"$4.53",
+    "stock": 53,
 },
 {
     "id":10,
@@ -78,7 +87,8 @@ const muebles = [
     "categoría":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
-    "price":"$0.12"
+    "price":"$0.12",
+    "stock": 53,
 }
 
 ]

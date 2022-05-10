@@ -3,31 +3,32 @@ import mueblesDB from '../data/muebles';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 
-function getMueble() {
+function getMueble(id) {
   return new Promise( (resolve, reject) => {
     setTimeout( ( ) => {
       const muebleFound = mueblesDB.find ((mueble) => {
-        return id === mueble.id
+        return id == mueble.id
       })
       resolve(muebleFound);
     }, 2000);
   });
   }
 
-function ItemsListContainer() {
+function ItemDetailContainer() {
+  
     const [mueble, setMueble] = useState([]);
     const { itemid } = useParams();
-    useEffect(() => {
-      getMueble().then( respuestaPromise => {
-        setMueble(respuestaPromise[0]);
-      });
-    }, [itemid]);
 
+    useEffect(() => {
+      getMueble(itemid).then( respuestaPromise => {
+        setMueble(respuestaPromise);
+        });
+      }, [itemid]);
+    
   return (
     
     <ItemDetail mueble={mueble} />  
   )
-}
+  }
   
-
-export default ItemsListContainer
+export default ItemDetailContainer
