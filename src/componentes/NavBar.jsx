@@ -16,8 +16,8 @@ function NavBar(){
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-1 md:border-green-400 flex flex-wrap">
           <Link to="/" className="mr-5 hover:text-green-600">Inicio</Link>
-          <Link to="/categoría/:Industrial" className="mr-5 hover:text-green-600">Mesas</Link>
-          <Link to="//categoría/:Living" className="mr-5 hover:text-green-600">Sillones</Link>
+          <Link to="/category/:Industrial" className="mr-5 hover:text-green-600">Mesas</Link>
+          <Link to="/category/:Living" className="mr-5 hover:text-green-600">Sillones</Link>
           <Link to="/" className="mr-5 hover:text-green-600">Contacto</Link>          
         </nav>
         <div>
@@ -26,6 +26,6 @@ function NavBar(){
       </div>
     </header> 
   )
-}
+  }
 export default NavBar
 

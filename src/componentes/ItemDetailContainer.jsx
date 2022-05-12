@@ -5,17 +5,16 @@ import { useParams } from 'react-router-dom';
 
 function getMueble(id) {
   return new Promise( (resolve, reject) => {
-    setTimeout( ( ) => {
+    setTimeout(() => {
       const muebleFound = mueblesDB.find ((mueble) => {
-        return id == mueble.id
+        return parseInt(id) === mueble.id;
       })
       resolve(muebleFound);
     }, 2000);
   });
   }
 
-function ItemDetailContainer() {
-  
+function ItemListContainer() {
     const [mueble, setMueble] = useState([]);
     const { itemid } = useParams();
 
@@ -31,4 +30,4 @@ function ItemDetailContainer() {
   )
   }
   
-export default ItemDetailContainer
+export default ItemListContainer

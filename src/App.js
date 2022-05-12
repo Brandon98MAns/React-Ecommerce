@@ -16,9 +16,9 @@ function App() {
         <BrowserRouter>
           <NavBar/>
           <Routes>
-            <Route path="/categoría/:categoríaid" element={<ItemsListContainer titulo="Categoria de Productos" />} />
-            <Route path="/" element={<ItemList />} />
-            <Route path="/mueble/:itemid" element={<ItemDetailContainer />} />
+            <Route path="/" element={<ItemsListContainer titulo="Hola desde React Roter" />} />
+            <Route path="/category/:categoryid" element={<ItemsListContainer titulo="Categoria de Productos" />} />
+            <Route path="/mueble/:itemid" element={<ItemDetailContainer/>} />
           </Routes>
           {/*<Carrusel/>*/}
           <ItemCount/>

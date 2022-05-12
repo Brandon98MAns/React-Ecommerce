@@ -6,35 +6,35 @@ import { useParams } from 'react-router-dom';
 function getMuebles() {
   return new Promise( (resolve, reject) => {
     setTimeout( ( ) => {
-      if (categoríaid !== undefined) {
+      if (categoryid !== undefined) {
          const arrayFiltered = mueblesDB.filter ((mueble) => {
-          return mueble.categoría === categoríaid;
+          return mueble.categoría === categoryid;
          });
          resolve (arrayFiltered);
       }
       else {
       resolve(mueblesDB);
       }
-    }, 200);
+    }, 700);
   });
   }
 
 function ItemsListContainer(props) {
-    const [muebles, setMuebles] = useState([]);
-    const { categoríaid } = useParams();
+    const [mueblesEstado, setMuebles] = useState([]);
+    const { categoryid } = useParams();
 
     useEffect(() => {
-      getMuebles().then( respuestaPromise => {
+      getMuebles(categoryid).then( respuestaPromise => {
         setMuebles(respuestaPromise);
       });
-    }, [categoríaid]);
+    }, [categoryid]);
 
   return (
     <div>
     <h1>{props.titulo}</h1>
     <br></br>
     <hr></hr>
-    <ItemList muebles={muebles} />
+    <ItemList muebles={mueblesEstado} />
     </div>
   )
 }
