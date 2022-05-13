@@ -3,7 +3,7 @@ const muebles = [
     "id": 1,
     "imgUrl": "https://silloneseuropa.com.ar/wp-content/uploads/2020/06/sam-1.jpg",
     "title": "Mesa",
-    "categoría":"Industrial",
+    "categoria":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Mesa de hierro y madera para comedor.",
     "price":"$4.53",
@@ -12,7 +12,7 @@ const muebles = [
 {
     "id":2,
     "title":"Sofa 3 cuerpos",
-    "categoría":"Living",
+    "categoria":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
     "price":"$0.12",
@@ -21,7 +21,7 @@ const muebles = [
 {
     "id": 3,
     "title": "Mesa",
-    "categoría":"Industrial",
+    "categoria":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Mesa de hierro y madera para comedor.",
     "price":"$4.53",
@@ -30,7 +30,7 @@ const muebles = [
 {
     "id":4,
     "title":"Sofa 3 cuerpos",
-    "categoría":"Living",
+    "categoria":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
     "price":"$0.12",
@@ -39,7 +39,7 @@ const muebles = [
 {
     "id": 5,
     "title": "Mesa",
-    "categoría":"Industrial",
+    "categoria":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Mesa de hierro y madera para comedor.",
     "price":"$4.53",
@@ -48,7 +48,7 @@ const muebles = [
 {
     "id":6,
     "title":"Sofa 3 cuerpos",
-    "categoría":"Living",
+    "categoria":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
     "price":"$0.12",
@@ -57,7 +57,7 @@ const muebles = [
 {
     "id": 7,
     "title": "Mesa",
-    "categoría":"Industrial",
+    "categoria":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Mesa de hierro y madera para comedor.",
     "price":"$4.53",
@@ -66,7 +66,7 @@ const muebles = [
 {
     "id":8,
     "title":"Sofa 3 cuerpos",
-    "categoría":"Living",
+    "categoria":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
     "price":"$0.12",
@@ -75,7 +75,7 @@ const muebles = [
 {
     "id": 9,
     "title": "Mesa",
-    "categoría":"Industrial",
+    "categoria":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Mesa de hierro y madera para comedor.",
     "price":"$4.53",
@@ -84,7 +84,7 @@ const muebles = [
 {
     "id":10,
     "title":"Sofa 3 cuerpos",
-    "categoría":"Living",
+    "categoria":"Living",
     "material":"Pluma y algodon",
     "descripcion":"Sofa de 3 cuerpos hecho a base de pluma",
     "price":"$0.12",

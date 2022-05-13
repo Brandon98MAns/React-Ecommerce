@@ -30,4 +30,4 @@ export function CartContextProvider ({children}) {
     )
 }
 
-export default CartContext
+export default useCartContext

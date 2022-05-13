@@ -21,6 +21,7 @@ function App() {
             <Route path="/mueble/:itemid" element={<ItemDetailContainer/>} />
           </Routes>
           {/*<Carrusel/>*/}
+          
           <ItemCount/>
           <Footer/>
         </BrowserRouter>

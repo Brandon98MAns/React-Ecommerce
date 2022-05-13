@@ -8,7 +8,7 @@ const Item = ({mueble}) => {
             <div className="shadow-lg green-300 p-6 rounded-lg">
             <h1>{mueble.title}</h1>
             <img src={mueble.imgUrl}></img>
-            <small>{mueble.categoría}</small>
+            <small>{mueble.categoria}</small>
             <p>{mueble.price}</p>
 
             <Link to={`/mueble/${mueble.id}`}>
