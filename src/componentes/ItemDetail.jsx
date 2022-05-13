@@ -22,13 +22,13 @@ const ItemDetail = ({mueble}) => {
                         src={mueble.imgUrl}>
                     </img>
                 </div>
-                <h3 className="h-20 tracking-widest text-green-600 font-bold title-font">
+                <h3 className="h-20 tracking-widest text-gray-600 font-bold title-font">
                     {mueble.title}
                 </h3>
                 <span className="title-font font-medium text-2x1 text-gray-900">
-                    <h2 className="mb-4">${mueble.price}</h2>
+                    <h2 className="mb-4">{mueble.price}</h2>
                 </span> 
-                <p className="leading-relaxed text-base">{mueble.categoría}</p>  
+                <p className="leading-relaxed text-base">{mueble.categoria}</p>  
                 {isInCart?
                     <button>Ver carrito</button>
                 :

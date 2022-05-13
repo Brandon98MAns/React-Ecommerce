@@ -1,13 +1,13 @@
 import './App.css';
 import NavBar from './componentes/NavBar';
-/*import Carrusel from './componentes/Carrusel';*/
+import Carrusel from './componentes/Carrusel';
 import Footer from './componentes/Footer';
 import ItemsListContainer from './componentes/ItemsListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import ItemCount from './componentes/ItemCount';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { CartContextProvider } from "./store/CartContext";
-import ItemList from './componentes/ItemList';
+
 
 function App() {
   return (
@@ -15,12 +15,12 @@ function App() {
       <CartContextProvider>
         <BrowserRouter>
           <NavBar/>
+          <Carrusel/>
           <Routes>
-            <Route path="/" element={<ItemsListContainer titulo="Hola desde React Roter" />} />
-            <Route path="/category/:categoryid" element={<ItemsListContainer titulo="Categoria de Productos" />} />
+            <Route path="/" element={<ItemsListContainer titulo="Nuestro Stock" />} />
+            <Route path="/category/:categoryid" element={<ItemsListContainer titulo="Nuestro Stock" />} />
             <Route path="/mueble/:itemid" element={<ItemDetailContainer/>} />
           </Routes>
-          {/*<Carrusel/>*/}
           
           <ItemCount/>
           <Footer/>
