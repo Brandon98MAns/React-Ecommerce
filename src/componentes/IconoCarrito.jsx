@@ -1,6 +1,13 @@
-const IconoCarrito = () => {
+import React from "react";
+import useCartContext from '../store/CartContext';
+import {Link} from "react-router-dom";
+
+
+function IconoCarrito (){
+  const {calcPriceCart} = useCartContext();
 
   return (
+    
     <div className="flex-none">
     <div className="dropdown dropdown-end">
       <label tabindex="0" className="btn btn-ghost btn-circle">
@@ -14,9 +21,9 @@ const IconoCarrito = () => {
       <div tabindex="0" className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
         <div className="card-body">
           <span className="font-bold text-lg">0 Items</span>
-          <span className="text-info">Subtotal: $0</span>
+          <span className="text-info">Subtotal: ${calcPriceCart()}</span>
           <div className="card-actions">
-            <button className="btn btn-primary btn-block">Mi Carrito</button>
+            <Link  className="btn btn-primary btn-block" to="/Cart">Ir al Carrito</Link> 
           </div>
         </div>
       </div>

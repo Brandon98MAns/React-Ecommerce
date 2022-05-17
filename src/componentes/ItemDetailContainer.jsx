@@ -14,7 +14,7 @@ function getMueble(id) {
   });
   }
 
-function ItemListContainer() {
+function ItemDetailContainer() {
     const [mueble, setMueble] = useState([]);
     const { itemid } = useParams();
 
@@ -30,4 +30,4 @@ function ItemListContainer() {
   )
   }
   
-export default ItemListContainer
+export default ItemDetailContainer

@@ -1,6 +1,7 @@
 import ItemCount from "./ItemCount";
 import {useState} from "react";
 import useCartContext from "../store/CartContext";
+import {Link} from "react-router-dom";
 
 const ItemDetail = ({mueble}) => {
     const [isInCart, setIsInCart] = useState(false);
@@ -10,6 +11,10 @@ const ItemDetail = ({mueble}) => {
         setIsInCart(true);
         addToCart(mueble, count)
         console.log("Agregado al cart: ", mueble, count);
+    }
+    
+    if (mueble === undefined) {
+        return <he4>Cargando . . .</he4>
     }
 
     return (
@@ -30,7 +35,7 @@ const ItemDetail = ({mueble}) => {
                 </span> 
                 <p className="leading-relaxed text-base">{mueble.categoria}</p>  
                 {isInCart?
-                    <button>Ver carrito</button>
+                    <Link to="/Cart">Ir al Carrito</Link>
                 :
                     <ItemCount onAdd={onAdd} stock={mueble.stock} initial={1}/>
                 }       

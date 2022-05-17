@@ -21,10 +21,44 @@ export function CartContextProvider ({children}) {
         setCart(cartFilter);
     }
 
+    const clearCart = () => {
+        setCart([]);
+    }
+
+    const isInCart = (id) => {
+        return cart.some( itemCart => itemCart.id ===id)
+    }
+
+    const getItemFromCart = (id) => {
+        return cart.find( itemCart => itemCart.id ===id)        
+    }
+
     const contextFunction = () => console.log("Contexto Listo")
 
+    //navbar
+    const cantInCart = () => {
+        const total = 0;
+        return total;
+    };
+
+    const calcPriceCart = () => {
+        const total = 0;
+        return total;
+    };
+
     return(
-        <Provider value={ { contextFunction, cart, addToCart, removeFromCart } }>
+        <Provider 
+        value={{
+             contextFunction, 
+             cart, 
+             addToCart, 
+             removeFromCart,
+             calcPriceCart,
+             cantInCart,
+             clearCart,
+             isInCart,
+             getItemFromCart
+        }}>
         {children}
         </Provider>
     )
