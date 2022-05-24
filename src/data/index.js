@@ -11,12 +11,12 @@ import { getFirestore,
         Timestamp,} from 'firebase/firestore/lite';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCm9PJcTfYmue5skvLu9lrZiPh25JLrup8",
-  authDomain: "livingroom-ecfa6.firebaseapp.com",
-  projectId: "livingroom-ecfa6",
-  storageBucket: "livingroom-ecfa6.appspot.com",
-  messagingSenderId: "958752948879",
-  appId: "1:958752948879:web:e9708c5aa26e55772de6fa",
+  apiKey: "AIzaSyC_eoxVQb0PplHuu_NIpWrnbA4UupO39-M",
+  authDomain: "reactliving-756bd.firebaseapp.com",
+  projectId: "reactliving-756bd",
+  storageBucket: "reactliving-756bd.appspot.com",
+  messagingSenderId: "524828840093",
+  appId: "1:524828840093:web:6d70b7fe42a02102c90474"
 };
 
 const app = initializeApp(firebaseConfig);
