@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore,
          doc,
          getDoc, 
@@ -18,7 +17,6 @@ const firebaseConfig = {
   storageBucket: "livingroom-ecfa6.appspot.com",
   messagingSenderId: "958752948879",
   appId: "1:958752948879:web:e9708c5aa26e55772de6fa",
-  measurementId: "G-B1GTB09TB2"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -192,5 +190,5 @@ export async function createBuyOrder(orderData){
 
   
   console.log("Orden Lista con el ID:", orderDoc.id);
-  console.log("Order Lista con el Data:", OrderDoc.data());
+  console.log("Order Lista con el Data:", orderDoc.data());
 }

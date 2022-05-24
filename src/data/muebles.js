@@ -2,7 +2,7 @@ const muebles = [
 {
     "id": 1,
     "imgUrl": "https://www.miahomecorner.com/data/productos/d_mesa-tema-extensible-1.jpg",
-    "title": "Mesa Familar",
+    "title": "Mesa Familiar",
     "categoria":"Industrial",
     "material": "Hierro y Madera",
     "descripcion":"Mesa de hierro y madera para comedor. Medidas",

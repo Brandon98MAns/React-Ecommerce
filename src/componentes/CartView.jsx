@@ -5,18 +5,27 @@ import {createBuyOrder} from '../data';
 function CartView() {
     const { cart, removeFromCart, clearCart, getTotalPrice } = useCartContext();
 
-    function handleBuy(){
-        const buyOrder = {
+function handleBuy(){
+    const itemsToBuy = cart.map((item) => ({ 
+        title: item.title,
+        cant: item.cant,
+        price: item.price,
+        id: item.id,
+        }
+))
+
+    const buyOrder = {
             buyer: {
                 name: "Brandon",
                 phone: "1234698",
                 email: "Brandon@ejemplo.com",
             },
-            items: [...cart],
+            items: itemsToBuy,
             date: new Date(),
             total: getTotalPrice(),
         }
         createBuyOrder(buyOrder);
+        clearCart();
 }
     
     if (cart.length === 0) {

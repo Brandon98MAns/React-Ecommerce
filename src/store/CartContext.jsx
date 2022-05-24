@@ -28,7 +28,7 @@ export function CartContextProvider ({children}) {
         return cart.some( itemCart => itemCart.id ===id)
     }
     const getItemFromCart = (id) => {
-        return cart.find( itemCart => itemCart.id ===id)        
+        return cart.find( itemCart => itemCart.id === id)        
     }
 
     //navbar
@@ -47,11 +47,10 @@ export function CartContextProvider ({children}) {
         <Provider 
         value={{
             getTotalPrice,
-             contextFunction, 
+            contextFunction, 
              cart, 
              addToCart, 
              removeFromCart,
-             calcPriceCart,
              cantInCart,
              clearCart,
              isInCart,
