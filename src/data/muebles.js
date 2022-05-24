@@ -96,6 +96,6 @@ const muebles = [
     "stock": 29,
 }
 
-]
+];
 
 export default muebles;

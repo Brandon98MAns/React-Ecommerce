@@ -4,7 +4,6 @@ import Carrusel from './componentes/Carrusel';
 import Footer from './componentes/Footer';
 import ItemsListContainer from './componentes/ItemsListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
-import ItemCount from './componentes/ItemCount';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { CartContextProvider } from "./store/CartContext";
 import CartView from './componentes/CartView';
@@ -23,8 +22,6 @@ function App() {
             <Route path="/mueble/:itemid" element={<ItemDetailContainer/>} />
             <Route path="/cart" element={<CartView/>} />
           </Routes>
-          
-          <ItemCount/>
           <Footer/>
         </BrowserRouter>
       </CartContextProvider>

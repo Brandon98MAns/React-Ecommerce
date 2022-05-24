@@ -1,8 +1,23 @@
 import React  from 'react'
-import  useCartContext from '../store/CartContext';
+import useCartContext from '../store/CartContext';
+import {createBuyOrder} from '../data';
 
 function CartView() {
     const { cart, removeFromCart, clearCart } = useCartContext();
+
+    function handleBuy(){
+        const buyOrder = {
+            buyer: {
+                name: "Brandon",
+                phone: "1234698",
+                email: "Brandon@ejemplo.com",
+            },
+            items: [...cart],
+            date: new Date(),
+            total: 0
+        }
+        createBuyOrder
+}
     
     if (cart.length === 0) {
         return <div style={{textAlign: "center"}}>
@@ -23,8 +38,9 @@ function CartView() {
                 </div>
             })}
             <button onClick={clearCart}>Vaciar Carrito</button>
+            <button onClick={handleBuy}>Comprar</button>
         </div>
     }
 }
  
-export default CartView
+export default CartView;
