@@ -31,6 +31,8 @@ export function CartContextProvider ({children}) {
         return cart.find( itemCart => itemCart.id === id)        
     }
 
+    const contextFunction = () => console.log("contexto listo!");
+    
     //navbar
     const cantInCart = () => {
         const total = 0;

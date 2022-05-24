@@ -41,7 +41,7 @@ function handleBuy(){
                     <br/>
                     <h2>{itemCart.title}</h2>
                     <h2>{itemCart.cant}</h2>
-                    <h2>{itemCart.cant * itemCart.price}</h2>
+                    <h2>${itemCart.cant * itemCart.price}</h2>
                     <button onClick={()=> removeFromCart(itemCart.id)} style={{ color: "red"}}>X</button>
                     <hr/><br/>
                 </div>

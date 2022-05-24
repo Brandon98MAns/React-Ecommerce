@@ -1,12 +1,13 @@
 import './App.css';
 import NavBar from './componentes/NavBar';
 import Carrusel from './componentes/Carrusel';
+import CartView from './componentes/CartView';
 import Footer from './componentes/Footer';
 import ItemsListContainer from './componentes/ItemsListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { CartContextProvider } from "./store/CartContext";
-import CartView from './componentes/CartView';
+
 
 
 function App() {

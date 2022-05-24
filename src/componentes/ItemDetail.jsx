@@ -13,9 +13,10 @@ const ItemDetail = ({mueble}) => {
         console.log("Agregado al cart: ", mueble, count);
     }
     
-    if (mueble === undefined) {
+    if (!mueble) {
         return <he4>Cargando . . .</he4>
     }
+    else{
 
     return (
         <div className="xl:w-1/3 md:w-1/2 p-4">
@@ -35,13 +36,14 @@ const ItemDetail = ({mueble}) => {
                 </span> 
                 <p className="leading-relaxed text-base">{mueble.categoria}</p>  
                 {isInCart?
-                    <Link to="/Cart">Ir al Carrito</Link>
+                    <Link to="/cart">Ir al Carrito</Link>
                 :
                     <ItemCount onAdd={onAdd} stock={mueble.stock} initial={1}/>
                 }       
             </div>
         </div>
-    )
+    );
 }
+};
 
 export default ItemDetail
