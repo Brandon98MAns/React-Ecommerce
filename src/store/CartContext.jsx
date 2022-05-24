@@ -32,12 +32,17 @@ export function CartContextProvider ({children}) {
     }
 
     const contextFunction = () => console.log("contexto listo!");
-    
+
     //navbar
     const cantInCart = () => {
         const total = 0;
         return total;
     };
+
+    const calcPriceCart = () => {
+        const total = 0;
+        return total;
+    }
 
     function getTotalPrice() {
         let totalPrice = 0;
@@ -53,6 +58,7 @@ export function CartContextProvider ({children}) {
              cart, 
              addToCart, 
              removeFromCart,
+             calcPriceCart,
              cantInCart,
              clearCart,
              isInCart,

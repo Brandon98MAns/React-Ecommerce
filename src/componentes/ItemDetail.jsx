@@ -4,6 +4,7 @@ import useCartContext from "../store/CartContext";
 import {Link} from "react-router-dom";
 
 const ItemDetail = ({mueble}) => {
+    
     const [isInCart, setIsInCart] = useState(false);
     const { addToCart } = useCartContext();
 
@@ -35,7 +36,7 @@ const ItemDetail = ({mueble}) => {
                     <h2 className="mb-4">{mueble.price}</h2>
                 </span> 
                 <p className="leading-relaxed text-base">{mueble.categoria}</p>  
-                {isInCart?
+                { isInCart(mueble.id)?
                     <Link to="/cart">Ir al Carrito</Link>
                 :
                     <ItemCount onAdd={onAdd} stock={mueble.stock} initial={1}/>
