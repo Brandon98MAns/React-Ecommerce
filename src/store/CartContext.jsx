@@ -4,6 +4,7 @@ import {useContext, useState} from 'react';
 
 const CartContext = createContext();
 const useCartContext = () => useContext(CartContext);
+
 const { Provider } = CartContext;
 
 export function CartContextProvider ({children}) {
@@ -20,20 +21,15 @@ export function CartContextProvider ({children}) {
         });
         setCart(cartFilter);
     }
-
     const clearCart = () => {
         setCart([]);
     }
-
     const isInCart = (id) => {
         return cart.some( itemCart => itemCart.id ===id)
     }
-
     const getItemFromCart = (id) => {
         return cart.find( itemCart => itemCart.id ===id)        
     }
-
-    const contextFunction = () => console.log("Contexto Listo")
 
     //navbar
     const cantInCart = () => {
@@ -41,14 +37,16 @@ export function CartContextProvider ({children}) {
         return total;
     };
 
-    const calcPriceCart = () => {
-        const total = 0;
-        return total;
-    };
-
+    function getTotalPrice() {
+        let totalPrice = 0;
+        cart.forEach(item => totalPrice += item.cant * item.price)
+        return totalPrice;
+    }
+    
     return(
         <Provider 
         value={{
+            getTotalPrice,
              contextFunction, 
              cart, 
              addToCart, 

@@ -3,7 +3,7 @@ import useCartContext from '../store/CartContext';
 import {createBuyOrder} from '../data';
 
 function CartView() {
-    const { cart, removeFromCart, clearCart } = useCartContext();
+    const { cart, removeFromCart, clearCart, getTotalPrice } = useCartContext();
 
     function handleBuy(){
         const buyOrder = {
@@ -14,9 +14,9 @@ function CartView() {
             },
             items: [...cart],
             date: new Date(),
-            total: 0
+            total: getTotalPrice(),
         }
-        createBuyOrder
+        createBuyOrder(buyOrder);
 }
     
     if (cart.length === 0) {
