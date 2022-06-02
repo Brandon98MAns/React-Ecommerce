@@ -42,6 +42,7 @@ export async function getAllItems(){
   //Obtener el total de productos de una categoria.
   
   export async function getItemsByCategory(categoryId) {
+    categoryId = categoryId.toLowerCase();
     const miColec = collection(firestoreDB, 'muebles');
     const queryMueble = query(miColec, where("categoria", "==", categoryId));
   
@@ -189,6 +190,8 @@ export async function createBuyOrder(orderData){
   const orderDoc = await addDoc(miColec, orderWithDate);
 
   
-  console.log("Orden Lista con el ID:", orderDoc.id);
-  console.log("Order Lista con el Data:", orderDoc.data());
+ /* console.log("Orden Lista con el ID:", orderDoc.id);
+  console.log("Order Lista con el Data:", orderDoc.data());*/
+
+  return( orderDoc.id) ;
 }

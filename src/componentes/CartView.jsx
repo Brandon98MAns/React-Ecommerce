@@ -16,22 +16,24 @@ function handleBuy(){
 
     const buyOrder = {
             buyer: {
-                name: "Brandon",
-                phone: "1234698",
+                name: "Brandon Mansfield",
+                phone: "(+54) 1123-4698",
                 email: "Brandon@ejemplo.com",
             },
             items: itemsToBuy,
             date: new Date(),
             total: getTotalPrice(),
         }
-        createBuyOrder(buyOrder);
+        createBuyOrder(buyOrder).then((respuesta) => 
+            console.log("respuesta desde react: ", respuesta)
+            ).finally( ()=> clearCart());
         clearCart();
 }
     
     if (cart.length === 0) {
         return <div style={{textAlign: "center"}}>
-        <h4>Su Carrito esta vacio. Comienze a comprar!</h4>
-        <a href ="/">Ver Catalogo</a>
+        <h4>Su Carrito esta vacio. Comienze a comprar!</h4><br></br>
+        <a href ="/" className="btn btn-dark">Ver Catalogo</a>
         </div>
     }
     else {
@@ -40,14 +42,15 @@ function handleBuy(){
                 return <div style={{textAlign:"center"}} key={itemCart.id}>
                     <br/>
                     <h2>{itemCart.title}</h2>
+                    {/*<img src={mueble.imgUrl}></img>*/}
                     <h2>{itemCart.cant}</h2>
                     <h2>${itemCart.cant * itemCart.price}</h2>
-                    <button onClick={()=> removeFromCart(itemCart.id)} style={{ color: "red"}}>X</button>
+                    <button onClick={()=> removeFromCart(itemCart.id)} className="btn btn-dark">Remover Producto</button>
                     <hr/><br/>
                 </div>
             })}
-            <button onClick={clearCart}>Vaciar Carrito</button>
-            <button onClick={handleBuy}>Comprar</button>
+            <button className="btn btn-danger title-font-mb" onClick={clearCart}>Vaciar Carrito</button>
+            <button className="btn btn-primary title-font-mb" onClick={handleBuy}>Comprar</button>
         </div>
     }
 }

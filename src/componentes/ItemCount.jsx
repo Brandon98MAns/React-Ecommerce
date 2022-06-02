@@ -16,14 +16,14 @@ function ItemCount(props) {
   return (
     
     <div>
-        <h1 className="sm:text- 3xl text 2x1 font-bold title-font-mb">Tu carrito</h1>
+        <h1 className="sm:text- 3xl text 2x1 font-bold title-font-mb">Unidades</h1>
         <div>
-            <button onClick={handleResta}>-</button>
+            <button className="btn btn-ghost" onClick={handleResta}> - </button>
             <span>  {count}  </span>
-            <button onClick={handleAdd}>+</button>
+            <button className="btn btn-ghost" onClick={handleAdd}> + </button>
         </div>  
         <div>
-            <button onClick={handleClick}>Agregar al carrito</button>
+            <button className="btn btn-ghost-primary title-font-mb" onClick={handleClick}>Agregar al carrito</button>
         </div>
     </div>
   )
