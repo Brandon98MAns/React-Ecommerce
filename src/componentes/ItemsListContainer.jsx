@@ -21,7 +21,7 @@ function ItemsListContainer(props) {
 
   return (
     <div>
-      <div className="border-4 bg-gray-50">
+      <div style={{marginTop: 0 }}  className="border-4 bg-gray-50">
         <p className="font-bold m-10 text-4xl">{props.titulo}</p>
       </div>
   
