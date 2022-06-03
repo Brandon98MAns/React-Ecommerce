@@ -18,9 +18,9 @@ function App() {
           <NavBar/>
           <Carrusel/>
           <Routes>
-            <Route path="/" element={<ItemsListContainer titulo="Nuestro Stock" />} />
-            <Route path="/category/:categoryid" element={<ItemsListContainer titulo="Nuestro Stock" />} />
-            <Route path="/mueble/:itemid" element={<ItemDetailContainer/>} />
+            <Route path="/" element={<ItemsListContainer titulo="Nuestro Catalogo" />} />
+            <Route path="/category/:categoryid" element={<ItemsListContainer titulo="Nuestras Mesas" />} />
+            <Route path="/mueble/:itemid" element={<ItemDetailContainer titulo="Nuestros Sillones"/>} />
             <Route path="/cart" element={<CartView/>} />
           </Routes>
           <Footer/>

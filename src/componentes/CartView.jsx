@@ -32,7 +32,7 @@ function handleBuy(){
     
     if (cart.length === 0) {
         return <div style={{textAlign: "center"}}>
-        <h4>Su Carrito esta vacio. Comienze a comprar!</h4><br></br>
+        <p>Su Carrito esta vacio. Comienze a comprar!</p><br></br>
         <a href ="/" className="btn btn-dark">Ver Catalogo</a>
         </div>
     }
@@ -42,15 +42,15 @@ function handleBuy(){
                 return <div style={{textAlign:"center"}} key={itemCart.id}>
                     <br/>
                     <h2>{itemCart.title}</h2>
-                    {/*<img src={mueble.imgUrl}></img>*/}
                     <h2>{itemCart.cant}</h2>
                     <h2>${itemCart.cant * itemCart.price}</h2>
                     <button onClick={()=> removeFromCart(itemCart.id)} className="btn btn-dark">Remover Producto</button>
+                   
                     <hr/><br/>
                 </div>
             })}
-            <button className="btn btn-danger title-font-mb" onClick={clearCart}>Vaciar Carrito</button>
-            <button className="btn btn-primary title-font-mb" onClick={handleBuy}>Comprar</button>
+            <button className="btn btn-danger" onClick={clearCart}>Vaciar Carrito</button>
+            <button className="btn btn-primary" onClick={handleBuy}>Comprar</button>
         </div>
     }
 }

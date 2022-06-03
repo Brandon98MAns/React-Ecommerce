@@ -14,10 +14,10 @@ function NavBar(){
           <img width="130" src={imgLogo} alt="logo" />
         </Link>
         <nav className="md:mr-auto md:ml-8 md:py-1 md:pl-7">
-            <Link to="/inicio" className="mr-20 hover:text-gray-400 font-bold">Inicio</Link>
-            <Link to="/category/industrial" className="mr-20 hover:text-gray-400 font-bold">Mesas</Link>
-            <Link to="/category/living" className="mr-20 hover:text-gray-400 font-bold">Sillones</Link>
-            <Link to="" className="mr-5 hover:text-gray-400 font-bold">Contacto</Link>          
+            <Link to="/" className="mr-20 hover:text-gray-100 font-bold btn btn-outline">Inicio</Link>
+            <Link to="/category/industrial" className="mr-20 hover:text-gray-100 font-bold btn btn-outline">Mesas</Link>
+            <Link to="/category/living" className="mr-20 hover:text-gray-100 font-bold btn btn-outline">Sillones</Link>
+            <Link to="" className="mr-5 hover:text-gray-100 font-bold btn btn-outline">Contacto</Link>          
         </nav>
         <div>
           <IconoCarrito />

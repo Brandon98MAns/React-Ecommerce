@@ -21,9 +21,11 @@ function ItemsListContainer(props) {
 
   return (
     <div>
-    <h1>{props.titulo}</h1>
-    <br></br>
-    <hr></hr>
+      <div className="border-4 bg-gray-50">
+        <p className="font-bold m-10 text-4xl">{props.titulo}</p>
+      </div>
+  
+  
     <ItemList muebles={mueblesEstado} />
     </div>
   )
