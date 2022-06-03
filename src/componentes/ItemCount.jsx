@@ -25,7 +25,7 @@ function ItemCount(props) {
         </div>  
         <div>
             <button className="btn btn-ghost-primary mt-5" onClick={handleClick}>Agregar al carrito</button>
-            <Link  className="btn-block btn btn-outline mt-5" to="/">Volver al Catalogo</Link>
+            
         </div>
     </div>
   )

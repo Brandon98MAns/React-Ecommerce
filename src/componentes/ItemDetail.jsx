@@ -15,7 +15,7 @@ const ItemDetail = ({mueble}) => {
     }
     
     if (!mueble) {
-        return <h5>Cargando . . .</h5>
+        return (<h5>Cargando . . .</h5>)
     }
     else{
 
@@ -41,7 +41,7 @@ const ItemDetail = ({mueble}) => {
                 :
                     <ItemCount onAdd={onAdd} stock={mueble.stock} initial={1}/>
                 }  
-                <Link to="/" className="btn btn-outline ml-5">Seguir Comprando</Link>     
+                <Link to="/" className="btn btn-outline ml-5">Seguir Comprando</Link>   
             </div>
         </div>
     );
