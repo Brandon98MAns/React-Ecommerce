@@ -1,14 +1,18 @@
 import React from "react";
 import useCartContext from '../store/CartContext';
+import { CartFill } from "react-bootstrap-icons";
 import {Link} from "react-router-dom";
 
 
 function IconoCarrito (){
-  const {calcPriceCart} = useCartContext();
+  const {cantInCart} = useCartContext();
 
   return (
-    
-    <div className="flex-none">
+    <>
+			<CartFill className="mx-1" />
+			<p className="mx-1">{cantInCart() !== 0 && cantInCart()}</p>
+		</>
+    /*<div className="flex-none">
     <div className="dropdown dropdown-end">
       <label tabindex="0" className="btn btn-ghost btn-circle">
       
@@ -25,7 +29,7 @@ function IconoCarrito (){
         </div>
       </div>
       </div>
-      </div>
+      </div>*/
   )
 }
 export default IconoCarrito

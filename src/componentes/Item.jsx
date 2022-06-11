@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Item = ({mueble}) => {
     return (
-    <div className="xl:w md:w-1/3 p-10">
+    <div className="xl:w-1/3 md:w-1/2 p-4 text-center">
         <div className="shadow-lg green-800 p-8 rounded-lg">
             <div>
                 <img

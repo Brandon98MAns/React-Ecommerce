@@ -15,7 +15,7 @@ const ItemDetail = ({mueble}) => {
     }
     
     if (!mueble) {
-        return (<h5>Cargando . . .</h5>)
+        return <h4 className="text-center text-2xl color-gray-300">Cargando . . .</h4>
     }
     else{
 

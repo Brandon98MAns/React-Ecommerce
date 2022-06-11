@@ -28,15 +28,14 @@ export function CartContextProvider ({children}) {
         return cart.some( itemCart => itemCart.id ===id)
     }
     const getItemFromCart = (id) => {
-        return cart.find( itemCart => itemCart.id === id)        
+        return cart.find((itemCart) => itemCart.id === id);        
     }
 
     const contextFunction = () => console.log("contexto listo!");
 
     //navbar
     const cantInCart = () => {
-        const total = 0;
-        return total;
+        return cart.reduce((acc, item) => acc + item.cant, 0);
     };
 
     const calcPriceCart = () => {
@@ -45,10 +44,10 @@ export function CartContextProvider ({children}) {
     }
 
     function getTotalPrice() {
-        let totalPrice = 0;
-        cart.forEach(item => totalPrice += item.cant * item.price)
-        return totalPrice;
-    }
+		let totalPrice = 0;
+		cart.forEach((item) => (totalPrice += item.cant * item.price));
+		return totalPrice;
+	}
     
     return(
         <Provider 
