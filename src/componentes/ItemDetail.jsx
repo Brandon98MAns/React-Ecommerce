@@ -21,13 +21,13 @@ const ItemDetail = ({mueble}) => {
 
     return (
         <div className="xl:w-1/3 md:w-1/2 p-10">
-        <div className="shadow-lg green-300 p-8 rounded-lg">
-            <div>
-                <img
-                    alt={mueble.title}
-                    className="image object-contain bg-placeholder h-70 rounded w-full object-center mb-8"
-                    src={mueble.imgUrl}
-                />
+            <div className="shadow-lg green-300 p-8 rounded-lg">
+                <div>
+                    <img
+                        alt={mueble.title}
+                        className="image object-contain bg-placeholder h-70 rounded w-full object-center mb-8"
+                        src={mueble.imgUrl}
+                    />
             </div>
             <p className="h-20 tracking-widest text-black font-bold text-2xl">
                 {mueble.title}
@@ -37,11 +37,10 @@ const ItemDetail = ({mueble}) => {
             </span> 
             <p className="leading-relaxed text-base font-mono mb-3">Categoria {mueble.categoria}</p>  
                 { isInCart?
-                    <Link to="/cart" className="btn btn-outline">Ir al Carrito</Link>
+                    <Link to="/cart" className="btn btn-dark">Ir al Carrito</Link>
                 :
                     <ItemCount onAdd={onAdd} stock={mueble.stock} initial={1}/>
-                }  
-                <Link to="/" className="btn btn-outline ml-5">Seguir Comprando</Link>   
+                }   
             </div>
         </div>
     );

@@ -20,14 +20,17 @@ function ItemsListContainer(props) {
     }, [categoryid]);
 
   return (
-    <div>
-      <div style={{marginTop: 0 }}  className="border-4 bg-gray-50">
-        <p className="font-bold m-10 text-4xl">{props.titulo}</p>
-      </div>
-  
+    <section className="text-black">
+      <div className="container px-5 py-12 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12">
+            <p className="font-bold m-10 text-4xl border-4 bg-gray-50">{props.titulo}</p>
+          <hr/>
+          </div>
+        </div>
+ 
   
     <ItemList muebles={mueblesEstado} />
-    </div>
+    </section>
   )
 }
 

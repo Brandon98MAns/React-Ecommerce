@@ -17,7 +17,7 @@ function NavBar(){
             <Link to="/" className="mr-20 hover:text-gray-100 font-bold btn btn-outline">Inicio</Link>
             <Link to="/category/industrial" className="mr-20 hover:text-gray-100 font-bold btn btn-outline">Mesas</Link>
             <Link to="/category/living" className="mr-20 hover:text-gray-100 font-bold btn btn-outline">Sillones</Link>
-            <Link to="" className="mr-5 hover:text-gray-100 font-bold btn btn-outline">Contacto</Link>          
+            <Link to="/" className="mr-5 hover:text-gray-100 font-bold btn btn-outline">Contacto</Link>          
         </nav>
         <div>
           <IconoCarrito />

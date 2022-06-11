@@ -16,7 +16,7 @@ function ItemCount(props) {
 
   return (
     
-    <div className="border-4 p-5">
+    <div className="border-4 p-5 rounded-xl">
         <h1 className="mb-5 font-bold">Unidades</h1>
         <div>
             <button className="btn btn-outline" onClick={handleResta}> - </button>
@@ -25,7 +25,7 @@ function ItemCount(props) {
         </div>  
         <div>
             <button className="btn btn-ghost-primary mt-5" onClick={handleClick}>Agregar al carrito</button>
-            
+            <Link to="/" className="btn btn-outline mt-5">Seguir Comprando</Link>
         </div>
     </div>
   )

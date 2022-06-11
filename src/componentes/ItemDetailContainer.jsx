@@ -15,8 +15,14 @@ function ItemDetailContainer() {
       }, [itemid]);
     
   return (
-    
-    <ItemDetail mueble={mueble} />  
+    <div >
+    <div style={{marginTop: 0 }}  className="border-4 bg-gray-50">
+      <div className="flex flex-col text-center w-full mb-12">
+        <p className="font-bold m-10 text-4xl">Diseñado para Vos!</p>
+      </div>
+    </div>
+    <ItemDetail mueble={mueble} /> 
+    </div>      
   )
   }
   

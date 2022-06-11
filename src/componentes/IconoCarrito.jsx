@@ -20,7 +20,7 @@ function IconoCarrito (){
       <div tabindex="0" className=" card card-compact dropdown-content w-60 bg-base-60 shadow">
         <div className="card-body ">
           <div className="card-actions">
-            <Link  className=" btn-block btn btn-outline" to="/Cart">ir al carrito</Link> 
+            <Link  className=" btn-block btn btn-outline" to="/Cart" alt={"btn btn-danger"}>ir al carrito</Link> 
           </div>
         </div>
       </div>
